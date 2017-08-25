@@ -328,7 +328,7 @@ float computeStepSize(const float& MMPerMin){
     
     */
     
-    return .0001575*MMPerMin; //value found empirically by running loop until there were not spare cycles
+    return .0000175*MMPerMin; //value found empirically by running loop until there were not spare cycles
 }
 
 int   cordinatedMove(const float& xEnd, const float& yEnd, const float& MMPerMin){
@@ -932,6 +932,7 @@ void  printBeforeAndAfter(const float& before, const float& after){
 }
 
 void  updateKinematicsSettings(const String& readString){
+    
     /*
     Updates the machine dimensions from the Ground Control settings
     */
